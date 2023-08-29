@@ -1,4 +1,3 @@
-"use strict";
 class Entreprise
 {
     nom;
@@ -15,3 +14,5 @@ class Entreprise
     removeService(service){}
     toHTML() {}
 }
+
+export {Entreprise}

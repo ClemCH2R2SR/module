@@ -1,5 +1,3 @@
-"use strict";
-
 class Service {
     nom;
     directeur;
@@ -39,3 +37,5 @@ class Service {
 
     toHTMLAccordion() {}
 }
+
+export {Service}

@@ -1,4 +1,6 @@
-"use strict";
+import {Employe} from './employe.js';
+import {Service} from './service.js';
+import {Entreprise} from './entreprise.js';
 
 window.addEventListener('DOMContentLoaded', function () {
     let directeur = new Employe('Doe', 'John', 550.37);
@@ -11,6 +13,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let employeDeBase = new Employe('Durand', 'Jacques', 1389);
     monService.addEmploye(employeDeBase);
+    monService.addEmploye(new Employe('Durand', 'Marguerite', 1764));
+    console.log(monService);
+    monService.removeEmploye(new Employe('Durand', 'Marguerite', 1764));
     console.log(monService);
 
 

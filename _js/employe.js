@@ -1,5 +1,3 @@
-"use strict";
-
 class Employe {
     nom;
     prenom;
@@ -15,4 +13,6 @@ class Employe {
     {
         return `<li>${this.nom} ${this.prenom} - Salaire : ${this.salaire} €</li>`;
     }
-} 
+}
+
+export {Employe}
