@@ -17,7 +17,25 @@ class Service {
         }
         this.employes.push(employe);
     }
-    
-    removeEmploye(employe){}
+
+    removeEmploye(employe)
+    {
+        let i = 0;
+        let trouve = false;
+        while(i < this.employes.length && !trouve)
+        {
+            if(this.employes[i].nom == employe.nom
+                && this.employes[i].prenom == employe.prenom){
+                trouve = true;
+            }else{
+                i++;
+            }
+        }
+        if(trouve)
+        {
+            this.employes.splice(i, 1);
+        }
+    }
+
     toHTMLAccordion() {}
 }
