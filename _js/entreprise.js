@@ -1,16 +1,17 @@
-"use strict"
-
-class Service {
+"use strict";
+class Entreprise
+{
     nom;
-    directeur;
-    employes;
-    addEmploye(employe);
-    removeEmploye(employe);
-    toHTMLAccordion();
-
-    constuctor(nom, directeur, employes){
-        this.nom = nom,
-        this.directeur = directeur,
-        this.employes = employes
+    adresse;
+    president;
+    services; 
+    constructor(nom, adresse, president, services){
+        this.nom = nom;
+        this.adresse = adresse;
+        this.president = president;
+        this.services = services;
     }
-};
+    addService(service){}
+    removeService(service){}
+    toHTML() {}
+}
