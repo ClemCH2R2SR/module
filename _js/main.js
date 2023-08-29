@@ -12,11 +12,11 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log(monService.directeur.salaire);
 
     let employeDeBase = new Employe('Durand', 'Jacques', 1389);
+    let employeDeBase2 = new Employe('Roux', 'Marguerite', 1764);
     monService.addEmploye(employeDeBase);
-    monService.addEmploye(new Employe('Durand', 'Marguerite', 1764));
+    monService.addEmploye(employeDeBase2);
     console.log(monService);
-    monService.removeEmploye(new Employe('Durand', 'Marguerite', 1764));
+    monService.removeEmploye(employeDeBase2);
     console.log(monService);
-
 
 });
